@@ -6,6 +6,9 @@
 	xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog/1.9
                   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-1.9.xsd">
 
+	<!-- Order Types -->
+	<include file="ordertypes.xml" relativeToChangelogFile="true"/>
+
 	<!-- Concepts -->
 	<include file="concepts.xml" relativeToChangelogFile="true"/>
 
@@ -132,7 +135,7 @@
 			Set order type 'Radiology Order' UUID
 		</comment>
 		<update tableName="order_type">
-			<column name="uuid" value="5338a5b1-2cbc-4081-9a9b-9e479e2acaad"/>
+			<column name="uuid" value="8189dbdd-3f10-11e4-adec-0800271c1b75"/>
 			<where>name='Radiology Order'</where>
 		</update>
 	</changeSet>
@@ -141,7 +144,7 @@
 			Set order type 'Drug Order' UUID
 		</comment>
 		<update tableName="order_type">
-			<column name="uuid" value="16bb6bcf-2e81-4ba5-8583-ff4913201a72"/>
+			<column name="uuid" value="131168f4-15f5-102d-96e4-000c29c2a5d7"/>
 			<where>name='Drug Order'</where>
 		</update>
 	</changeSet>
@@ -150,7 +153,7 @@
 			Set order type 'Lab Order' UUID
 		</comment>
 		<update tableName="order_type">
-			<column name="uuid" value="f8ae333e-9d1a-423e-a6a8-c3a0687ebcf2"/>
+			<column name="uuid" value="8189b409-3f10-11e4-adec-0800271c1b75"/>
 			<where>name='Lab Order'</where>
 		</update>
 	</changeSet>
